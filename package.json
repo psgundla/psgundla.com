@@ -1,6 +1,7 @@
 {
-  "name": "biocoderr.github.io",
+  "name": "psgundla-portfolio",
   "version": "1.0.0",
+  "homepage": "https://psgundla.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
