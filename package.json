@@ -10,7 +10,8 @@
     "analyze": "vite-bundle-analyzer",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint src --ext js,jsx --fix",
-    "deploy": "npm run build:prod",
+    "deploy": "npm run build:prod && wrangler pages deploy dist",
+    "deploy:cloudflare": "npm run build:prod && wrangler pages deploy dist",
     "serve": "vite preview --port 3000",
     "clean": "rm -rf dist"
   },
@@ -28,6 +29,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "terser": "^5.43.1",
-    "vite": "^7.0.6"
+    "vite": "^7.0.6",
+    "wrangler": "^4.54.0"
   }
 }

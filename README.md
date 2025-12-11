@@ -60,12 +60,31 @@ npm run preview
 3. Set output directory: `dist`
 4. Deploy automatically on push to main branch
 
-### Manual Deployment
-```bash
-# Build the project
-npm run build
+### Manual Deployment with Wrangler CLI
 
-# Upload the dist folder to Cloudflare Pages
+Prerequisites:
+- Install Wrangler CLI (included in devDependencies)
+- Authenticate with Cloudflare: `npx wrangler login`
+
+```bash
+# Deploy to Cloudflare Pages
+npm run deploy
+
+# Or use the dedicated command
+npm run deploy:cloudflare
+
+# First-time deployment will create a new project
+# Subsequent deployments will update the existing project
+```
+
+### Environment Variables
+For production deployments, set up your Cloudflare API token:
+```bash
+# Set your Cloudflare API token
+export CLOUDFLARE_API_TOKEN=your_token_here
+
+# Or use wrangler login for interactive authentication
+npx wrangler login
 ```
 
 ## 🎯 Performance Optimizations
