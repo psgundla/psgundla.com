@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: /sitemap.xml
+Sitemap: https://psgundla.com/sitemap.xml
 
 # Crawl-delay (optional)
 Crawl-delay: 1
