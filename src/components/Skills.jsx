@@ -9,33 +9,44 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Programming Languages',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Next.js', level: 88 },
-        { name: 'Tailwind CSS', level: 92 },
-        { name: 'Framer Motion', level: 85 },
+        { name: 'R', level: 95 },
+        { name: 'Python', level: 90 },
+        { name: 'JavaScript', level: 85 },
+        { name: 'Java', level: 80 },
+        { name: 'C', level: 75 },
+        { name: 'Perl', level: 70 },
       ],
     },
     {
-      title: 'Backend',
+      title: 'Bioinformatics & Data Science',
       skills: [
-        { name: 'Node.js', level: 87 },
-        { name: 'Python', level: 83 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 78 },
-        { name: 'GraphQL', level: 75 },
+        { name: 'Machine Learning', level: 88 },
+        { name: 'Data Analysis', level: 92 },
+        { name: 'Biostatistics', level: 85 },
+        { name: 'MATLAB', level: 78 },
+        { name: 'Gene Networks', level: 80 },
       ],
     },
     {
-      title: 'Tools & Others',
+      title: 'Web & Database',
       skills: [
-        { name: 'Git', level: 93 },
-        { name: 'Docker', level: 82 },
-        { name: 'AWS', level: 79 },
-        { name: 'Figma', level: 88 },
-        { name: 'Testing', level: 85 },
+        { name: 'HTML/CSS', level: 90 },
+        { name: 'PHP', level: 75 },
+        { name: 'MySQL', level: 85 },
+        { name: 'SQLite', level: 80 },
+        { name: 'React', level: 82 },
+      ],
+    },
+    {
+      title: 'Cloud & DevOps',
+      skills: [
+        { name: 'AWS', level: 80 },
+        { name: 'Google Cloud', level: 78 },
+        { name: 'Docker', level: 85 },
+        { name: 'Git/GitHub', level: 93 },
+        { name: 'Linux', level: 88 },
       ],
     },
   ];
@@ -107,7 +118,7 @@ const Skills = () => {
 
           {/* Skills Grid */}
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
             variants={containerVariants}
           >
             {skillCategories.map((category, categoryIndex) => (
@@ -176,13 +187,13 @@ const Skills = () => {
               className="flex flex-wrap justify-center gap-4 mt-8"
               variants={containerVariants}
             >
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech, index) => (
+              {['R', 'Python', 'JavaScript', 'Machine Learning', 'AWS', 'Docker', 'MySQL', 'React', 'Linux', 'Git'].map((tech, index) => (
                 <motion.span
                   key={tech}
                   className={`
                     px-4 py-2 rounded-full text-sm font-medium
-                    ${isDark 
-                      ? 'bg-gray-800 text-red-500 border border-gray-700' 
+                    ${isDark
+                      ? 'bg-gray-800 text-red-500 border border-gray-700'
                       : 'bg-gray-100 text-black border border-gray-200'
                     }
                   `}

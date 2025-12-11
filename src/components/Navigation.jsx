@@ -15,7 +15,11 @@ const Navigation = () => {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Resume', href: '#resume' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Publications', href: '#publications' },
+    { name: 'Certifications', href: '#certifications' },
+    { name: 'Photography', href: '#photography' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -72,7 +76,7 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Portfolio
+              Pranav Swaroop
             </motion.div>
 
             {/* Desktop Navigation */}

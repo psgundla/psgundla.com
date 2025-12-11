@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useParallax } from '../hooks/useParallax';
 import ParallaxBackground from './ParallaxBackground';
@@ -10,8 +10,11 @@ const Hero = () => {
   const parallaxOffset = useParallax(0.3);
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/BioCoderR', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/pranavswaroopgundla/', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/pranav.goud.526/', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/pranav_swaroop_g/', label: 'Instagram' },
+    { icon: Twitter, href: 'https://twitter.com/im_pranavgundla', label: 'Twitter' },
     { icon: Mail, href: '#contact', label: 'Email' },
   ];
 
@@ -86,13 +89,13 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
             variants={itemVariants}
           >
-            <span className="block">Creative</span>
+            <span className="block">Pranav Swaroop</span>
             <span className={`block ${isDark ? 'text-red-500' : 'text-black'}`}>
-              Developer
+              Gundla
             </span>
           </motion.h1>
 
-          {/* Subtitle */}
+          {/* Subtitle with typing effect */}
           <motion.p
             className={`
               text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed
@@ -100,8 +103,7 @@ const Hero = () => {
             `}
             variants={itemVariants}
           >
-            Crafting exceptional digital experiences with modern technologies,
-            innovative design, and seamless user interactions.
+            I'm a <span className={isDark ? 'text-red-500' : 'text-black'}>Bioinformatician</span>, <span className={isDark ? 'text-red-500' : 'text-black'}>Data Scientist</span>, Developer, Research Analyst & Photographer
           </motion.p>
 
           {/* CTA Buttons */}

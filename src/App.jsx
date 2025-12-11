@@ -5,7 +5,11 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Resume from './components/Resume';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Publications from './components/Publications';
+import Photography from './components/Photography';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -47,7 +51,11 @@ function App() {
           <Hero />
           <About />
           <Skills />
+          <Resume />
           <Projects />
+          <Publications />
+          <Certifications />
+          <Photography />
           <Contact />
         </main>
         

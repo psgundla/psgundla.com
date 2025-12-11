@@ -79,9 +79,9 @@ const About = () => {
             <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              I'm a passionate developer who loves creating digital experiences that make a difference. 
-              With expertise in modern web technologies and a keen eye for design, I bring ideas to life 
-              through code.
+              I work in the field of bioinformatics, data science, and development. I'm passionate about being a bioinformatician as well as web designer.
+              I am a recent bioinformatics graduate from Manipal Academy of Higher Education, Manipal.
+              Few things that I love to do include playing badminton, reading books, and playing violin.
             </p>
           </motion.div>
 
@@ -123,18 +123,39 @@ const About = () => {
           >
             <motion.div variants={itemVariants}>
               <h3 className="text-3xl font-bold mb-6">
-                My <span className={isDark ? 'text-red-500' : 'text-black'}>Journey</span>
+                My <span className={isDark ? 'text-red-500' : 'text-black'}>Details</span>
               </h3>
-              <p className={`text-lg mb-6 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                Started as a curious developer exploring the endless possibilities of code. 
-                Over the years, I've honed my skills in various technologies and frameworks, 
-                always staying up-to-date with the latest trends and best practices.
-              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <p className={`font-semibold ${isDark ? 'text-red-500' : 'text-black'}`}>Birthday:</p>
+                    <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>24 August 1997</p>
+                  </div>
+                  <div>
+                    <p className={`font-semibold ${isDark ? 'text-red-500' : 'text-black'}`}>Age:</p>
+                    <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>27</p>
+                  </div>
+                  <div>
+                    <p className={`font-semibold ${isDark ? 'text-red-500' : 'text-black'}`}>Degree:</p>
+                    <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>MSc. Bioinformatics</p>
+                  </div>
+                  <div>
+                    <p className={`font-semibold ${isDark ? 'text-red-500' : 'text-black'}`}>City:</p>
+                    <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>Hyderabad, India</p>
+                  </div>
+                  <div>
+                    <p className={`font-semibold ${isDark ? 'text-red-500' : 'text-black'}`}>Freelance:</p>
+                    <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>Available</p>
+                  </div>
+                </div>
+              </div>
+
               <p className={`text-lg mb-8 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                I believe in the power of technology to solve real-world problems and 
-                create meaningful connections between people and digital products.
+                Most of my projects include areas such as processing and analyzing large-scale datasets to develop insights using applied statistics and machine-learning.
+                I also work with Database development, Web development for the applications of Predictive & Exploratory Analysis.
               </p>
-              
+
               <motion.button
                 className={`btn-primary ${
                   isDark ? 'btn-primary-dark' : 'btn-primary-light'
@@ -159,17 +180,14 @@ const About = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="w-full h-full flex items-center justify-center">
-                  <motion.div
-                    className={`text-6xl ${isDark ? 'text-red-500' : 'text-black'}`}
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  >
-                    <Code size={80} />
-                  </motion.div>
-                </div>
+                <img
+                  src="/assets/images/Pic4.png"
+                  alt="Pranav Swaroop Gundla"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </motion.div>
-              
+
               {/* Floating elements */}
               <motion.div
                 className={`absolute -top-4 -right-4 w-8 h-8 rounded-full ${
