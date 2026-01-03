@@ -1,4 +1,5 @@
 # Portfolio
+<<<<<<< HEAD
 <h2 align="center">Hi, I'm Gundla Pranav Swaroop</h2> <p align="center"> <a href="https://git.io/typing-svg"> <img src="https://readme-typing-svg.herokuapp.com?center=true&font=Comfortaa&color=016EEA&size=24&lines=Bioinformatician;Computational+Oncology+Researcher;WSI+%26+Deep+Learning" /> </a> </p>
 
 ## 🔬 Research Profile
@@ -89,3 +90,5 @@ Cross-cohort generalization in histopathology AI
 ✈️ Travel enthusiast (recently 🇳🇱 🇫🇷 🇩🇪)
 
 🤝 Enjoy organizing research socials and mentoring early-career researchers
+=======
+>>>>>>> b8e8b6c6c4ac05b16f76b41eb07272d75770e9e4
