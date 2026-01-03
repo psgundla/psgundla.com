@@ -86,9 +86,9 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
             variants={itemVariants}
           >
-            <span className="block">Creative</span>
+            <span className="block">PhD</span>
             <span className={`block ${isDark ? 'text-sky-500' : 'text-black'}`}>
-              Developer
+              Researcher
             </span>
           </motion.h1>
 

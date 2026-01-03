@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useInView } from '../hooks/useParallax';
 
@@ -22,12 +22,6 @@ const Contact = () => {
       title: 'Email',
       value: 'contact@psgundla.com',
       href: 'mailto:contact@psgundla.com',
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '+49 (176) 108-77090',
-      href: 'tel:+4917610877090',
     },
     {
       icon: MapPin,

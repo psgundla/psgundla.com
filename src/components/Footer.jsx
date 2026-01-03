@@ -56,7 +56,7 @@ const Footer = () => {
               >
                 <Heart size={16} fill="currentColor" />
               </motion.span>
-              by Your Name
+              by Pranav
             </p>
             <p className={`text-sm mt-2 ${isDark ? 'text-gray-500' : 'text-gray-500'}`}>
               © {new Date().getFullYear()} All rights reserved.
