@@ -12,11 +12,11 @@ const ThemeToggle = () => {
       className={`
         relative p-3 rounded-full transition-all duration-300 
         ${isDark 
-          ? 'bg-gray-800 text-red-500 hover:bg-gray-700' 
+          ? 'bg-gray-800 text-sky-500 hover:bg-gray-700' 
           : 'bg-gray-100 text-black hover:bg-gray-200'
         }
         focus:outline-none focus:ring-4 focus:ring-opacity-50
-        ${isDark ? 'focus:ring-red-500' : 'focus:ring-gray-300'}
+        ${isDark ? 'focus:ring-sky-500' : 'focus:ring-gray-300'}
       `}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

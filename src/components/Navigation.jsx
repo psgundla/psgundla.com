@@ -41,7 +41,7 @@ const Navigation = () => {
       {/* Progress Bar */}
       <motion.div
         className={`fixed top-0 left-0 h-1 z-50 ${
-          isDark ? 'bg-red-500' : 'bg-black'
+          isDark ? 'bg-sky-500' : 'bg-black'
         }`}
         style={{ width: `${scrollProgress}%` }}
         initial={{ scaleX: 0 }}
@@ -67,7 +67,7 @@ const Navigation = () => {
             {/* Logo */}
             <motion.div
               className={`text-2xl font-bold ${
-                isDark ? 'text-red-500' : 'text-black'
+                isDark ? 'text-sky-500' : 'text-black'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -83,7 +83,7 @@ const Navigation = () => {
                   onClick={() => handleNavClick(item.href)}
                   className={`
                     relative px-4 py-2 font-medium transition-colors duration-300
-                    ${isDark ? 'text-white hover:text-red-500' : 'text-black hover:text-gray-600'}
+                    ${isDark ? 'text-white hover:text-sky-500' : 'text-black hover:text-gray-600'}
                   `}
                   whileHover={{ y: -2 }}
                   initial={{ opacity: 0, y: -20 }}
@@ -93,7 +93,7 @@ const Navigation = () => {
                   {item.name}
                   <motion.div
                     className={`absolute bottom-0 left-0 h-0.5 ${
-                      isDark ? 'bg-red-500' : 'bg-black'
+                      isDark ? 'bg-sky-500' : 'bg-black'
                     }`}
                     initial={{ width: 0 }}
                     whileHover={{ width: '100%' }}
@@ -141,7 +141,7 @@ const Navigation = () => {
                     className={`
                       block w-full text-left px-4 py-3 rounded-lg font-medium transition-colors duration-300
                       ${isDark 
-                        ? 'text-white hover:bg-gray-800 hover:text-red-500' 
+                        ? 'text-white hover:bg-gray-800 hover:text-sky-500' 
                         : 'text-black hover:bg-gray-100'
                       }
                     `}

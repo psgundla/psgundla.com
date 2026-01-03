@@ -23,11 +23,11 @@ const Footer = () => {
             className={`
               p-3 rounded-full transition-all duration-300
               ${isDark 
-                ? 'bg-gray-800 text-red-500 hover:bg-gray-700' 
+                ? 'bg-gray-800 text-sky-500 hover:bg-gray-700' 
                 : 'bg-gray-100 text-black hover:bg-gray-200'
               }
               focus:outline-none focus:ring-4 focus:ring-opacity-50
-              ${isDark ? 'focus:ring-red-500' : 'focus:ring-gray-300'}
+              ${isDark ? 'focus:ring-sky-500' : 'focus:ring-gray-300'}
             `}
             whileHover={{ scale: 1.1, y: -2 }}
             whileTap={{ scale: 0.95 }}
@@ -52,7 +52,7 @@ const Footer = () => {
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}
-                className="text-red-500"
+                className="text-sky-500"
               >
                 <Heart size={16} fill="currentColor" />
               </motion.span>
@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <motion.div
               className={`w-2 h-2 rounded-full ${
-                isDark ? 'bg-red-500' : 'bg-black'
+                isDark ? 'bg-sky-500' : 'bg-black'
               }`}
               animate={{ scale: [1, 1.5, 1] }}
               transition={{ duration: 2, repeat: Infinity }}

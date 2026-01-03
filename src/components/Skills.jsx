@@ -92,10 +92,10 @@ const Skills = () => {
           {/* Section Header */}
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              My <span className={isDark ? 'text-red-500' : 'text-black'}>Skills</span>
+              My <span className={isDark ? 'text-sky-500' : 'text-black'}>Skills</span>
             </h2>
             <div className={`w-24 h-1 mx-auto mb-8 ${
-              isDark ? 'bg-red-500' : 'bg-black'
+              isDark ? 'bg-sky-500' : 'bg-black'
             }`} />
             <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
@@ -118,7 +118,7 @@ const Skills = () => {
                 whileHover={{ y: -5 }}
               >
                 <h3 className={`text-2xl font-bold mb-8 text-center ${
-                  isDark ? 'text-red-500' : 'text-black'
+                  isDark ? 'text-sky-500' : 'text-black'
                 }`}>
                   {category.title}
                 </h3>
@@ -148,7 +148,7 @@ const Skills = () => {
                       }`}>
                         <motion.div
                           className={`h-full rounded-full ${
-                            isDark ? 'bg-red-500' : 'bg-black'
+                            isDark ? 'bg-sky-500' : 'bg-black'
                           }`}
                           variants={progressVariants}
                           initial="hidden"
@@ -182,7 +182,7 @@ const Skills = () => {
                   className={`
                     px-4 py-2 rounded-full text-sm font-medium
                     ${isDark 
-                      ? 'bg-gray-800 text-red-500 border border-gray-700' 
+                      ? 'bg-gray-800 text-sky-500 border border-gray-700' 
                       : 'bg-gray-100 text-black border border-gray-200'
                     }
                   `}

@@ -87,7 +87,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             <span className="block">Creative</span>
-            <span className={`block ${isDark ? 'text-red-500' : 'text-black'}`}>
+            <span className={`block ${isDark ? 'text-sky-500' : 'text-black'}`}>
               Developer
             </span>
           </motion.h1>
@@ -144,7 +144,7 @@ const Hero = () => {
                 className={`
                   p-3 rounded-full transition-all duration-300
                   ${isDark 
-                    ? 'bg-gray-800 text-white hover:bg-red-500' 
+                    ? 'bg-gray-800 text-white hover:bg-sky-500' 
                     : 'bg-gray-100 text-black hover:bg-black hover:text-white'
                   }
                 `}
@@ -171,7 +171,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className={`${isDark ? 'text-red-500' : 'text-black'}`}
+              className={`${isDark ? 'text-sky-500' : 'text-black'}`}
             >
               <ChevronDown size={24} />
             </motion.div>

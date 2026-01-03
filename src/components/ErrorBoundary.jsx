@@ -35,7 +35,7 @@ class ErrorBoundary extends React.Component {
             <div className="text-center">
               <div className="mb-4">
                 <svg
-                  className="mx-auto h-12 w-12 text-red-500"
+                  className="mx-auto h-12 w-12 text-sky-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

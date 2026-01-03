@@ -20,19 +20,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'hello@example.com',
-      href: 'mailto:hello@example.com',
+      value: 'contact@psgundla.com',
+      href: 'mailto:contact@psgundla.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+49 (176) 108-77090',
+      href: 'tel:+4917610877090',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Essen, GER',
       href: '#',
     },
   ];
@@ -99,10 +99,10 @@ const Contact = () => {
           {/* Section Header */}
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Get In <span className={isDark ? 'text-red-500' : 'text-black'}>Touch</span>
+              Get In <span className={isDark ? 'text-sky-500' : 'text-black'}>Touch</span>
             </h2>
             <div className={`w-24 h-1 mx-auto mb-8 ${
-              isDark ? 'bg-red-500' : 'bg-black'
+              isDark ? 'bg-sky-500' : 'bg-black'
             }`} />
             <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
@@ -116,7 +116,7 @@ const Contact = () => {
             {/* Contact Information */}
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold mb-8">
-                Let's <span className={isDark ? 'text-red-500' : 'text-black'}>Connect</span>
+                Let's <span className={isDark ? 'text-sky-500' : 'text-black'}>Connect</span>
               </h3>
               
               <div className="space-y-6">
@@ -139,7 +139,7 @@ const Contact = () => {
                   >
                     <div className={`
                       p-3 rounded-full mr-4
-                      ${isDark ? 'bg-red-500/20 text-red-500' : 'bg-gray-100 text-black'}
+                      ${isDark ? 'bg-red-500/20 text-sky-500' : 'bg-gray-100 text-black'}
                     `}>
                       <info.icon size={24} />
                     </div>
@@ -186,7 +186,7 @@ const Contact = () => {
                       className={`
                         w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
                         ${isDark 
-                          ? 'bg-gray-800 border-gray-700 text-white focus:border-red-500 focus:ring-red-500/20' 
+                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
                           : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                         }
                       `}
@@ -209,7 +209,7 @@ const Contact = () => {
                       className={`
                         w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
                         ${isDark 
-                          ? 'bg-gray-800 border-gray-700 text-white focus:border-red-500 focus:ring-red-500/20' 
+                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
                           : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                         }
                       `}
@@ -233,7 +233,7 @@ const Contact = () => {
                     className={`
                       w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
                       ${isDark 
-                        ? 'bg-gray-800 border-gray-700 text-white focus:border-red-500 focus:ring-red-500/20' 
+                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
                         : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                       }
                     `}
@@ -256,7 +256,7 @@ const Contact = () => {
                     className={`
                       w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4 resize-none
                       ${isDark 
-                        ? 'bg-gray-800 border-gray-700 text-white focus:border-red-500 focus:ring-red-500/20' 
+                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
                         : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                       }
                     `}
@@ -272,7 +272,7 @@ const Contact = () => {
                     ${isSubmitted
                       ? 'bg-green-500 text-white'
                       : isDark 
-                        ? 'bg-red-500 text-white hover:bg-red-600 disabled:bg-gray-700' 
+                        ? 'bg-sky-500 text-white hover:bg-sky-600 disabled:bg-gray-700' 
                         : 'bg-black text-white hover:bg-gray-800 disabled:bg-gray-400'
                     }
                     disabled:cursor-not-allowed transform hover:scale-105 focus:outline-none focus:ring-4

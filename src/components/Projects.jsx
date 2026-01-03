@@ -35,8 +35,8 @@ const Projects = () => {
     {
       id: 3,
       title: 'AI Dashboard',
-      description: 'An analytics dashboard with AI-powered insights and data visualization.',
-      longDescription: 'An intelligent analytics dashboard that provides AI-powered insights, interactive data visualizations, and predictive analytics. Features include real-time data processing, custom chart generation, and machine learning integration.',
+      description: 'An analytics dashboard with AI-powesky insights and data visualization.',
+      longDescription: 'An intelligent analytics dashboard that provides AI-powesky insights, interactive data visualizations, and pskyictive analytics. Features include real-time data processing, custom chart generation, and machine learning integration.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
       technologies: ['React', 'Python', 'TensorFlow', 'D3.js', 'FastAPI'],
       github: '#',
@@ -60,7 +60,7 @@ const Projects = () => {
       description: 'A modern social media platform with real-time messaging and content sharing.',
       longDescription: 'A comprehensive social media platform featuring real-time messaging, content sharing, user profiles, news feed algorithms, and social interactions. Built with modern web technologies and optimized for performance.',
       image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop',
-      technologies: ['React', 'GraphQL', 'Redis', 'WebSocket', 'AWS'],
+      technologies: ['React', 'GraphQL', 'skyis', 'WebSocket', 'AWS'],
       github: '#',
       live: '#',
       category: 'Full Stack',
@@ -81,7 +81,7 @@ const Projects = () => {
   const categories = ['All', 'Frontend', 'Full Stack', 'Mobile', 'Data Science'];
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredProjects = activeCategory === 'All' 
+  const filteskyProjects = activeCategory === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
@@ -125,10 +125,10 @@ const Projects = () => {
           {/* Section Header */}
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              My <span className={isDark ? 'text-red-500' : 'text-black'}>Projects</span>
+              My <span className={isDark ? 'text-sky-500' : 'text-black'}>Projects</span>
             </h2>
             <div className={`w-24 h-1 mx-auto mb-8 ${
-              isDark ? 'bg-red-500' : 'bg-black'
+              isDark ? 'bg-sky-500' : 'bg-black'
             }`} />
             <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
@@ -151,7 +151,7 @@ const Projects = () => {
                   px-6 py-3 rounded-full font-medium transition-all duration-300
                   ${activeCategory === category
                     ? isDark 
-                      ? 'bg-red-500 text-white' 
+                      ? 'bg-sky-500 text-white' 
                       : 'bg-black text-white'
                     : isDark
                       ? 'bg-gray-800 text-gray-300 hover:bg-gray-700'
@@ -172,7 +172,7 @@ const Projects = () => {
             layout
           >
             <AnimatePresence mode="wait">
-              {filteredProjects.map((project, index) => (
+              {filteskyProjects.map((project, index) => (
                 <motion.div
                   key={project.id}
                   className={`card ${isDark ? 'card-dark' : 'card-light'} group cursor-pointer`}
@@ -195,7 +195,7 @@ const Projects = () => {
                     />
                     <div className={`
                       absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                      ${isDark ? 'bg-red-500/20' : 'bg-black/20'}
+                      ${isDark ? 'bg-sky-500/20' : 'bg-black/20'}
                       flex items-center justify-center
                     `}>
                       <Eye className="text-white" size={32} />
@@ -217,7 +217,7 @@ const Projects = () => {
                           className={`
                             px-3 py-1 text-xs rounded-full
                             ${isDark 
-                              ? 'bg-gray-800 text-red-500' 
+                              ? 'bg-gray-800 text-sky-500' 
                               : 'bg-gray-100 text-black'
                             }
                           `}
@@ -258,7 +258,7 @@ const Projects = () => {
                         className={`
                           flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-300
                           ${isDark 
-                            ? 'bg-red-500 text-white hover:bg-red-600' 
+                            ? 'bg-sky-500 text-white hover:bg-sky-600' 
                             : 'bg-black text-white hover:bg-gray-800'
                           }
                         `}
@@ -318,7 +318,7 @@ const Projects = () => {
                     className={`
                       px-3 py-1 text-sm rounded-full
                       ${isDark 
-                        ? 'bg-gray-800 text-red-500' 
+                        ? 'bg-gray-800 text-sky-500' 
                         : 'bg-gray-100 text-black'
                       }
                     `}

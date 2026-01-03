@@ -71,10 +71,10 @@ const About = () => {
           {/* Section Header */}
           <motion.div className="text-center mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className={isDark ? 'text-red-500' : 'text-black'}>Me</span>
+              About <span className={isDark ? 'text-sky-500' : 'text-black'}>Me</span>
             </h2>
             <div className={`w-24 h-1 mx-auto mb-8 ${
-              isDark ? 'bg-red-500' : 'bg-black'
+              isDark ? 'bg-sky-500' : 'bg-black'
             }`} />
             <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
@@ -100,7 +100,7 @@ const About = () => {
                 <motion.div
                   className={`
                     inline-flex items-center justify-center w-16 h-16 rounded-full mb-6
-                    ${isDark ? 'bg-red-500/20 text-red-500' : 'bg-gray-100 text-black'}
+                    ${isDark ? 'bg-red-500/20 text-sky-500' : 'bg-gray-100 text-black'}
                   `}
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
@@ -123,7 +123,7 @@ const About = () => {
           >
             <motion.div variants={itemVariants}>
               <h3 className="text-3xl font-bold mb-6">
-                My <span className={isDark ? 'text-red-500' : 'text-black'}>Journey</span>
+                My <span className={isDark ? 'text-sky-500' : 'text-black'}>Journey</span>
               </h3>
               <p className={`text-lg mb-6 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 Started as a curious developer exploring the endless possibilities of code. 
@@ -161,7 +161,7 @@ const About = () => {
               >
                 <div className="w-full h-full flex items-center justify-center">
                   <motion.div
-                    className={`text-6xl ${isDark ? 'text-red-500' : 'text-black'}`}
+                    className={`text-6xl ${isDark ? 'text-sky-500' : 'text-black'}`}
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                   >
@@ -173,14 +173,14 @@ const About = () => {
               {/* Floating elements */}
               <motion.div
                 className={`absolute -top-4 -right-4 w-8 h-8 rounded-full ${
-                  isDark ? 'bg-red-500' : 'bg-black'
+                  isDark ? 'bg-sky-500' : 'bg-black'
                 }`}
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
               <motion.div
                 className={`absolute -bottom-4 -left-4 w-6 h-6 rounded-full ${
-                  isDark ? 'bg-red-500/60' : 'bg-gray-400'
+                  isDark ? 'bg-sky-500/60' : 'bg-gray-400'
                 }`}
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, delay: 1 }}

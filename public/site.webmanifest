@@ -1,7 +1,7 @@
 {
-  "name": "Portfolio - Professional Web Developer",
-  "short_name": "Portfolio",
-  "description": "Professional portfolio showcasing skills, projects, and experience in web development and design",
+  "name": "Portfolio",
+  "short_name": "PSGundla",
+  "description": "PhD researcher working in Computational Oncology",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -21,6 +21,6 @@
       "purpose": "maskable any"
     }
   ],
-  "categories": ["portfolio", "professional", "developer"],
+  "categories": ["portfolio", "professional", "researcher"],
   "lang": "en-US"
 }
