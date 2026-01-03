@@ -52,7 +52,7 @@ const Footer = () => {
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}
-                className="text-sky-500"
+                className="text-red-500"
               >
                 <Heart size={16} fill="currentColor" />
               </motion.span>

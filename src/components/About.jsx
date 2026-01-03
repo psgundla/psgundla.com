@@ -100,7 +100,7 @@ const About = () => {
                 <motion.div
                   className={`
                     inline-flex items-center justify-center w-16 h-16 rounded-full mb-6
-                    ${isDark ? 'bg-red-500/20 text-sky-500' : 'bg-gray-100 text-black'}
+                    ${isDark ? 'bg-sky-500/20 text-sky-500' : 'bg-sky-100 text-sky-600'}
                   `}
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}

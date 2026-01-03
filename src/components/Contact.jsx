@@ -133,7 +133,7 @@ const Contact = () => {
                   >
                     <div className={`
                       p-3 rounded-full mr-4
-                      ${isDark ? 'bg-red-500/20 text-sky-500' : 'bg-gray-100 text-black'}
+                      ${isDark ? 'bg-sky-500/20 text-sky-500' : 'bg-sky-100 text-sky-600'}
                     `}>
                       <info.icon size={24} />
                     </div>
@@ -179,8 +179,8 @@ const Contact = () => {
                       required
                       className={`
                         w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
-                        ${isDark 
-                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
+                        ${isDark
+                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-sky-500/20'
                           : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                         }
                       `}
@@ -202,8 +202,8 @@ const Contact = () => {
                       required
                       className={`
                         w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
-                        ${isDark 
-                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
+                        ${isDark
+                          ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-sky-500/20'
                           : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                         }
                       `}
@@ -226,8 +226,8 @@ const Contact = () => {
                     required
                     className={`
                       w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4
-                      ${isDark 
-                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
+                      ${isDark
+                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-sky-500/20'
                         : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                       }
                     `}
@@ -249,8 +249,8 @@ const Contact = () => {
                     rows={6}
                     className={`
                       w-full px-4 py-3 rounded-lg border transition-all duration-300 focus:outline-none focus:ring-4 resize-none
-                      ${isDark 
-                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-red-500/20' 
+                      ${isDark
+                        ? 'bg-gray-800 border-gray-700 text-white focus:border-sky-500 focus:ring-sky-500/20'
                         : 'bg-white border-gray-300 text-black focus:border-black focus:ring-gray-200'
                       }
                     `}
@@ -270,7 +270,7 @@ const Contact = () => {
                         : 'bg-black text-white hover:bg-gray-800 disabled:bg-gray-400'
                     }
                     disabled:cursor-not-allowed transform hover:scale-105 focus:outline-none focus:ring-4
-                    ${isDark ? 'focus:ring-red-500/20' : 'focus:ring-gray-200'}
+                    ${isDark ? 'focus:ring-sky-500/20' : 'focus:ring-gray-200'}
                   `}
                   whileHover={!isSubmitting && !isSubmitted ? { scale: 1.02 } : {}}
                   whileTap={!isSubmitting && !isSubmitted ? { scale: 0.98 } : {}}

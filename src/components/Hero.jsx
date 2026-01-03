@@ -54,7 +54,7 @@ const Hero = () => {
           <motion.div
             key={i}
             className={`absolute w-2 h-2 rounded-full ${
-              isDark ? 'bg-red-500/20' : 'bg-gray-300/40'
+              isDark ? 'bg-sky-500/20' : 'bg-gray-300/40'
             }`}
             style={{
               left: `${Math.random() * 100}%`,
@@ -82,15 +82,16 @@ const Hero = () => {
           style={{ transform: `translateY(${parallaxOffset}px)` }}
         >
           {/* Main heading */}
-          <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
-            variants={itemVariants}
-          >
-            <span className="block">PhD</span>
-            <span className={`block ${isDark ? 'text-sky-500' : 'text-black'}`}>
-              Researcher
-            </span>
+          <motion.h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+  
+          <span className={`block ${isDark ? 'text-sky-500' : 'text-black'}`}>
+          Computational Oncology & AI
+          </span>
           </motion.h1>
+          <motion.p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            Developing interpretable deep learning methods for
+            molecular subtyping and spatial analysis of histopathology images.
+          </motion.p>
 
           {/* Subtitle */}
           <motion.p

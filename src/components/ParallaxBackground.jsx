@@ -28,7 +28,7 @@ const ParallaxBackground = () => {
           <motion.div
             key={i}
             className={`absolute w-1 h-1 rounded-full ${
-              isDark ? 'bg-red-500/30' : 'bg-gray-400/30'
+              isDark ? 'bg-sky-500/30' : 'bg-gray-400/30'
             }`}
             style={{
               left: `${Math.random() * 100}%`,
@@ -56,7 +56,7 @@ const ParallaxBackground = () => {
           <motion.div
             key={i}
             className={`absolute w-32 h-32 rounded-full blur-3xl ${
-              isDark ? 'bg-red-500/10' : 'bg-gray-300/20'
+              isDark ? 'bg-sky-500/10' : 'bg-gray-300/20'
             }`}
             style={{
               left: `${Math.random() * 100}%`,

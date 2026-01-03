@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useScrollProgress } from '../hooks/useParallax';
 import ThemeToggle from './ThemeToggle';
+import faviconLogo from '../../assets/images/favicon.png';
 
 const Navigation = () => {
   const { isDark } = useTheme();
@@ -65,15 +66,18 @@ const Navigation = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <motion.div
-              className={`text-2xl font-bold ${
-                isDark ? 'text-sky-500' : 'text-black'
-              }`}
+            <motion.button
+              onClick={() => handleNavClick('#home')}
+              className="flex items-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Portfolio
-            </motion.div>
+              <img
+                src={faviconLogo}
+                alt="Logo"
+                className="h-10 w-10 md:h-12 md:w-12"
+              />
+            </motion.button>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
